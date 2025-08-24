@@ -103,7 +103,6 @@ if STEPSIZE < 1:
 else:
     step_size = timedelta(minutes=STEPSIZE)
 
-#TODO add progress messages
 #loops for origins and destinations
 for origin_row in origins_df.itertuples():
     for dest_row in dest_df.itertuples():
@@ -158,4 +157,5 @@ connections_df.to_csv('results/' + CONNECTIONS, index=False)
 routing_errors.to_csv('results/' + CONNECTIONS + '_errors.csv', index=False)
 
 print("OTP-calculations finished.")
+
 
