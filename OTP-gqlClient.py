@@ -26,9 +26,9 @@ SEARCH_WINDOW = "PT360M"            #Search window for OTP-routing (format: "PTx
 #for a more precise description of the date and time formats, check the ISO 8601 standard
 
 #Names of the workfiles and the csv with the results
-DESTINATIONS = "sportpl_dests.csv"          #csv file with the destination coordinates for the analysis (needs to be in the "workfiles" directory)
+DESTINATIONS = "dests.csv"          #csv file with the destination coordinates for the analysis (needs to be in the "workfiles" directory)
 ORIGINS = "origins.csv"                     #csv file with the origin coordinates for the analysis (needs to be in the "workfiles" directory)
-CONNECTIONS = "sportpl_connections.csv"     #name of the csv file to store the results in (will be saved in the "results" directory)
+CONNECTIONS = "example_connections.csv"     #name of the csv file to store the results in (will be saved in the "results" directory)
 
 #########################################################################################
 
@@ -157,5 +157,6 @@ connections_df.to_csv('results/' + CONNECTIONS, index=False)
 routing_errors.to_csv('results/' + CONNECTIONS + '_errors.csv', index=False)
 
 print("OTP-calculations finished.")
+
 
 
