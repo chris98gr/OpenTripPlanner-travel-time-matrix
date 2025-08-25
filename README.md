@@ -60,6 +60,7 @@ OTP-gqlClient.py file.
 
 After setting all the parameters and setting up an OpenTripPlanner instance, the OTP-gqlClient.py script can be run to start the calculations.
 To monitor the progress, the script will print progress messages to the terminal.
+(Note: The script uses relative paths to access the workfiles. Therefore, when starting the script from a terminal, make sure you start it from within the directory that contains the script and the workfiles directory.)
 
 When the calculations are done, the results can be found in the "results" directory.
 
@@ -79,4 +80,5 @@ one file containing the routing errors, where OTP did not calculate a connection
 
 2. In the errors.csv file, the script stores pairs of origin and destination, where no connection
     was returned by OTP. It contains the origin and destination IDs and some additional details, 
+
     explaining why no connection was found.
